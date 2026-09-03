@@ -3,6 +3,11 @@
 兩位 PM（Webber、羽）共同維護 EchoTrail 產品規格的地方。
 協作方式見 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
+## 要推 spec 上去時
+
+在這個資料夾裡對 Claude Code 說「**推 spec**」，會觸發 [`push-spec` skill](.claude/skills/push-spec/SKILL.md)：
+自動開分支、commit、push，並給你開 Pull Request 的連結。兩人 clone 後都能用。
+
 ## 文件導覽
 
 | 文件 | 用途 | 狀態 |
