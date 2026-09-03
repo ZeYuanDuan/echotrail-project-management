@@ -21,16 +21,21 @@ git commit -m "B-2 結果頁文案定稿；DECISIONS 對應條目補上決策理
 git push -u origin spec/b2-結果頁文案
 ```
 
-然後到 Gitea 網站上對這條分支開 **Pull Request**，指定另一位 PM 當 reviewer。
+然後到 Gitea 網站上對這條分支開 **Pull Request**，指定 reviewer（見規則 3）。
 
-## 規則（兩人小團隊，輕量即可）
+團隊角色見 [README](README.md#團隊與角色)：spec 由兩位 PM（Webber、Ariel）維護，工程師（Alson、Celine）與 mentor（Roanne、Aaron）視需要參與 review 與討論。
 
-1. **不直接 push 到 `main`**，一律走 PR。建議在 Gitea repo 設定裡把 `main` 設為 Protected Branch。
+## 規則（輕量即可）
+
+1. **不直接 push 到 `main`**，一律走 PR。（請 Webber 在 repo Settings → Branches 把 `main` 設為 Protected Branch。）
 2. **一個 PR 只處理一個議題**，方便 review，也方便之後回溯。
-3. PR 至少一位 reviewer approve 後才 merge；merge 後刪掉分支。
+3. PR 至少一位 reviewer approve 後才 merge，merge 後刪掉分支：
+   - 規格內容 → 另一位 PM review（方向性問題可再找 mentor Roanne）
+   - 牽涉實作可行性 / 架構 → 找工程師或 mentor Aaron review
+   - **不要 merge 自己的 PR**（除非對方已 approve 且明確請你自己 merge）
 4. 改 SPEC 的定案內容時，**同一個 PR 內**一起更新 DECISIONS 對應條目。
 5. 未拍板的事寫進 DECISIONS 的「開放問題」，或直接開一個 Gitea Issue 追蹤。
-6. 遇到兩人同時改同一段造成 conflict：以 DECISIONS 記錄的最新決策為準，當面對一次再合。
+6. 遇到同時改同一段造成 conflict：以 DECISIONS 記錄的最新決策為準，當面對一次再合。
 
 ## commit / PR 訊息慣例
 
