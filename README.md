@@ -40,18 +40,22 @@ cd echotrail-spec
 | 文件 | 用途 | 狀態 |
 |---|---|---|
 | [EchoTrail-MVP-SPEC.md](EchoTrail-MVP-SPEC.md) | 目前**已定案**的 MVP 規格（「現在是什麼」），依 A／B／C 功能分組 | 主文件 |
-| [EchoTrail-DECISIONS.md](EchoTrail-DECISIONS.md) | 決策脈絡與**尚未拍板**的開放問題（「怎麼決定成這樣、還有什麼沒決定」） | 主文件 |
+| [EchoTrail-DECISIONS.md](EchoTrail-DECISIONS.md) | 決策脈絡（為什麼）與**尚未拍板**的開放問題 | 主文件 |
+| [CHANGELOG.md](CHANGELOG.md) | spec 變更的一句話摘要，按日期，給人快速掃 | 主文件 |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | 協作流程與 commit / PR 慣例 | 規範 |
 | [archive/](archive/) | 已被併入或取代的歷史版本，僅供追溯，不再維護 | 封存 |
-| `.claude/skills/push-spec/` | Claude Code skill，見下方〈推 spec〉 | 工具 |
+| `.claude/skills/` | Claude Code skills，見下方〈用 Claude Code 維護〉 | 工具 |
 
-### 兩份主文件的關係
+### 三份主文件的分工
 
-- **SPEC** 只放已定案的規格結果，不放討論過程。
-- **DECISIONS** 保留討論過程，並追蹤未決事項；條目與 SPEC 章節（A-4、B-2、C-7…）互相對照。
-- **改 SPEC 的定案內容時，同一個 PR 內一起更新 DECISIONS 對應條目。**
-- 想知道「這條規格當初為什麼這樣定」→ 看 DECISIONS 對應條目。
-- 想知道「還有什麼沒決定」→ 看 DECISIONS 的開放問題，或 repo 的 [Issues](https://gitea.com/EchoTrail/echotrail-spec/issues)。
+| 想知道… | 看哪份 |
+|---|---|
+| 現在的規格是什麼 | **SPEC** |
+| 這條規格當初為什麼這樣定、考慮過什麼 | **DECISIONS**〈一、決策紀錄〉對應條目 |
+| 還有什麼沒決定 | **DECISIONS**〈二、開放問題〉，或 repo [Issues](https://gitea.com/EchoTrail/echotrail-spec/issues) |
+| 最近 spec 改了哪些東西 | **CHANGELOG** |
+
+規則：**改 SPEC 定案內容時，同一個 PR 內一起更新 DECISIONS 對應條目、並在 CHANGELOG 補一句。** 下方的 skill 會提醒你做這件事。
 
 ---
 
@@ -75,16 +79,16 @@ cd echotrail-spec
 
 ---
 
-## 推 spec（push-spec skill）
+## 用 Claude Code 維護
 
-在這個資料夾裡用 **Claude Code**，直接說「**推 spec**」「spec 改好了要送出」「幫我開 PR」，
-會觸發 [`push-spec` skill](.claude/skills/push-spec/SKILL.md)。它會：
+在這個資料夾裡用 **Claude Code**，三個 skill 涵蓋日常維護。clone 下來就有，全 team 都能用。
 
-1. 確認在對的 repo、秀出你改了哪些檔請你確認
-2. 從最新的 `main` 開一條 `spec/<主題>` 分支（保留你未 commit 的變更）
-3. 按慣例寫 commit 訊息，新增 spec 檔時順手更新本 README 導覽表
-4. `git push` 分支，並給你開 PR 的連結
+| 說這句 | 觸發 | 做什麼 |
+|---|---|---|
+| 「**推 spec**」「幫我開 PR」 | [`push-spec`](.claude/skills/push-spec/SKILL.md) | 從最新 `main` 開 `spec/<主題>` 分支、按慣例 commit、push，給你開 PR 的連結 |
+| 「**記 decision**」「這個決定記下來」「第X題有結論了」 | [`log-decision`](.claude/skills/log-decision/SKILL.md) | 把決策（決定什麼／為什麼／推翻什麼／誰拍板）寫進 `DECISIONS.md`〈決策紀錄〉，並把對應的開放問題標記為已解決 |
+| 「**記 changelog**」「這次改動記一下」 | [`log-changelog`](.claude/skills/log-changelog/SKILL.md) | 把這次變更整理成一句話，加進 `CHANGELOG.md` 最上面 |
 
-它**不會**直接 push `main`，也不會代你在 gitea 網站上開 PR / 指定 reviewer / merge（那些牽涉帳號，自己點）。
+一次完整的 spec 變更 = 改 SPEC（`push-spec` 開 PR）＋ `log-decision` ＋ `log-changelog`，三者放同一個 PR。`push-spec` 會提醒你別漏。
 
-clone 下來就有這個 skill，兩位 PM 都能用。
+這些 skill **不會**直接 push `main`，也不會代你在 gitea 網站上開 PR / 指定 reviewer / merge（牽涉帳號，自己點）。

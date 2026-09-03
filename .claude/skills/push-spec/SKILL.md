@@ -58,6 +58,11 @@ description: 把新的或改過的 EchoTrail spec 推上 gitea.com，開成分�
 
 7. 如果這次**新增了一份 spec 檔**，同一個 commit 裡順便更新 `README.md` 的「文件導覽」表格，加一列。
 
+7b. 這次若動到 SPEC 的規格內容，提醒使用者在**同一個 PR** 裡一起：
+    - 用 `記 decision`（log-decision skill）把決策脈絡寫進 `EchoTrail-DECISIONS.md`
+    - 用 `記 changelog`（log-changelog skill）在 `CHANGELOG.md` 補一句摘要
+    使用者要的話就依序觸發那兩個 skill，改完再回到下面第 8 步一起 commit。
+
 8. Commit，訊息遵守慣例：
    - 標題以章節開頭：`B-2 結果頁文案定稿` / `docs: 補充 pitch 講稿第三段`
    - 內文一句話交代**為什麼這樣改**
