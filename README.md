@@ -14,8 +14,6 @@
 |---|---|---|
 | [EchoTrail-MVP-SPEC.md](EchoTrail-MVP-SPEC.md) | 目前已定案的 MVP 規格（「現在是什麼」），A／B／C 功能分組 | 主文件 |
 | [EchoTrail-DECISIONS.md](EchoTrail-DECISIONS.md) | 決策脈絡與尚未拍板的開放問題（「怎麼決定成這樣、還有什麼沒決定」） | 主文件 |
-| [EchoTrail-Pitch-Deck-草稿.md](EchoTrail-Pitch-Deck-草稿.md) | 4 分鐘 pitch 講稿草稿 | 草稿 |
-| [EchoTrail-ENG招募問答.md](EchoTrail-ENG招募問答.md) | 工程師招募 Q&A | 參考 |
 | [archive/](archive/) | 已被併入或取代的歷史版本，僅供追溯 | 封存 |
 
 ## 兩份主文件的關係
