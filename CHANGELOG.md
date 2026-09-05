@@ -10,6 +10,10 @@ EchoTrail spec 的變更摘要，**新的在上**。每筆一句話，細節看�
 
 ---
 
+## 2026-09-06
+
+- `移除` Figma / Wireframe 清單精簡為三項（Prototype可互動版、Pitch Deck、競品參考tryapt.ai），拿掉Prototype v3/v4、第三小組流程圖、Figma流程圖260830補充、完整腳本提示詞四個連結。（Webber）
+
 ## 2026-09-05
 
 - `新增` 登入（簡易命名對應）：使用者輸入名字直接對應使用者ID，不做密碼／Email驗證。（Webber）

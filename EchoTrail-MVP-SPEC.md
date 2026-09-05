@@ -68,13 +68,8 @@
 
 ## Figma / Wireframe
 
-- Prototype v3（HTML原型）：三分頁——匯入與對話（A-2履歷與快速匯入／A-4多輪對話）、職涯歷程檔案（B-1純時序時間軸／B-2逐事件洞察卡片／B-3整體洞察）、vs.免費AI（跨事件模式的具體對照樣本＋量化評分表）
-- Prototype v4（互動式對話流程原型）：可實際互動的對話收集引導＋快速匯入＋時間軸，涵蓋A-2快速匯入子路徑／A-4多輪對話（含時間判斷與專案標籤子邏輯）／B-1的實際行為：https://claude.ai/code/artifact/147a00ce-d09e-40d2-8e34-9fc5ae92f01b
-- 第三小組畫面流程圖（`曼陀號_第三小組.pdf`）：onboarding → Echo Card 產出 → Echo Insights 確認迴圈 → Dashboard 生成的完整流程視覺化
-- Figma流程圖（260830補充）：確認了A-5「產生洞察→Echo Card→更新Dashboard」為兩個按鈕的序列（見A-5），輸入框亦有麥克風圖示，對應A-3語音輸入；同時揭露一個目前SPEC未定義的機制——更新Dashboard文案提及「點擊更新即可消耗點數」，代表可能有點數／額度機制限制更新Dashboard的次數，尚未有正式規格，見DECISIONS.md開放事項：https://www.figma.com/board/hMzCP7EQqZCOI11AutvLeP/EchoTrail-%E6%9B%BC%E9%99%80%E8%99%9F-PM-x-ENG?node-id=0-1&p=f&t=n7ZfovbaHYqVbElg-0
 - Prototype（可互動版）：https://echotrail-prototype.netlify.app/
 - Pitch Deck：https://gamma.app/docs/A-EchoTrail--dms0kpmsfxjb2au?mode=doc
-- Prototype完整腳本規格提示詞（`☆260826_羽_EchoTrail_Prototype_完整腳本規格提示詞.md`）：AI人設、Echo Card、Persona摘要卡、職涯測評的逐字文案／色碼／互動邏輯來源，內容已整併進下方A-4、B-2、C-1～C-10，可直接餵給AI生成HTML原型
 - 競品參考：tryapt.ai（對話式引導UX參考）
 
 ## Function Detail
