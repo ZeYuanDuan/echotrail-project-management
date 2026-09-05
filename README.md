@@ -11,14 +11,16 @@
 
 ## 團隊與角色
 
-| 角色 | 成員 | 在這個 repo 做什麼 |
-|---|---|---|
-| PM | **Webber**（GitHub: `TsuWebber`）、**Ariel（羽）** | 撰寫與維護 spec，兩人皆可直接推 `main`；較大改動開 PR 互相 review |
-| 工程師 | **Alson**、**Celine** | 讀 spec 實作；對規格有疑問時在 PR / Issue 留言或開 Issue；review 與實作相關的 PR |
-| Mentor（PM） | **Roanne** | 視需要 review PR、給規格方向建議 |
-| Mentor（ENG） | **Aaron** | 視需要 review 技術可行性、給架構建議 |
+| 角色 | 成員 | Email／GitHub | 在這個 repo 做什麼 |
+|---|---|---|---|
+| PM | **Webber** | GitHub: `TsuWebber` | 撰寫與維護 spec，兩人皆可直接推 `main`；較大改動開 PR 互相 review |
+| PM | **Ariel（羽）** | yuuronglife@gmail.com | 撰寫與維護 spec，兩人皆可直接推 `main`；較大改動開 PR 互相 review |
+| 工程師 | **Alson** | GitHub: `ZeYuanDuan` | 讀 spec 實作；對規格有疑問時在 PR / Issue 留言或開 Issue；review 與實作相關的 PR |
+| 工程師 | **Celine** | celinewu1010@gmail.com | 讀 spec 實作；對規格有疑問時在 PR / Issue 留言或開 Issue；review 與實作相關的 PR |
+| Mentor（PM） | **Roanne** | rion0325g@gmail.com | 視需要 review PR、給規格方向建議 |
+| Mentor（ENG） | **Aaron** | ninocar215@gmail.com | 視需要 review 技術可行性、給架構建議 |
 
-> 需要存取權限找 Webber 到 repo **Settings → Collaborators** 加人；加入後請把 GitHub 使用者名稱補進上表。
+> 需要存取權限找 Webber（或 repo owner Alson）到 repo **Settings → Collaborators** 用上面 Email 或 GitHub 帳號加人；對方接受邀請、確定 GitHub 使用者名稱後，請把上表 Email 欄位換成 GitHub 帳號。
 
 ---
 
