@@ -4,6 +4,7 @@ EchoTrail spec 的變更摘要，**新的在上**。每筆一句話，細節看�
 
 類別標記：`新增` / `變更` / `移除` / `更名` / `修正`。
 章節代號對應 [EchoTrail-MVP-SPEC.md](EchoTrail-MVP-SPEC.md) 的 A／B／C 分組。
+每條結尾標註改動者 `（姓名）`，方便協作時知道找誰確認。
 
 維護方式：改 spec 時用 Claude Code 說「**記 changelog**」，見 [.claude/skills/log-changelog](.claude/skills/log-changelog/SKILL.md)。
 
@@ -11,18 +12,18 @@ EchoTrail spec 的變更摘要，**新的在上**。每筆一句話，細節看�
 
 ## 2026-09-05
 
-- `新增` 登入（簡易命名對應）：使用者輸入名字直接對應使用者ID，不做密碼／Email驗證。
-- `新增` A-4 艾可 System Prompt 草稿（教練人設核心精神，不洩漏系統內部術語）。
-- `新增` A-4 Echo Insights LLM 判斷邏輯：對照 Echo Card 六欄位追問，每次最多3題。
-- `新增` A-5〈產生洞察〉按鈕觸發機制：按鈕本質是自動送出「Please Generate my insight」的保留字指令。
-- `新增` A-5 Echo Card 各欄位 LLM 生成規則（事件的發生／我的情緒bullet格式、我在意／我討厭、我的價值主張）。
-- `新增` C-2 Persona卡片引言句生成規則（動機價值基礎＋職稱組合句）。
-- `變更` C-3 驅動卡片主視覺改為三圈交集Venn圖，原三卡片內容改為展開檢視。
-- `新增` C-4 文字雲兩種候選收集法（離散情緒標記／LLM自定義關鍵字），尚未定案。
-- `新增` C-5 行為模式排行收集法：從客觀事件萃取行為導向，取前3名。
-- `新增` C-7／C-8／C-9 完整技術方案：逐事件記分、累加平均；C-9附完整DISC座標轉換公式。
-- `變更` Scope 大幅縮範圍，改為只列本輪 MVP 實際範圍（登入、側邊欄、A-1／A-2／A-4／A-5、B-2、C-2／C-3／C-4／C-5／C-7／C-10），A-3、B-1（完整視覺化）／B-3／B-4／B-5／B-6、C-1／C-6／C-8／C-9 移入 Part 2。
-- `變更` 文件：spec repo 從 gitea 遷移至 GitHub（echotrail-project-management），README／CONTRIBUTING／push-spec skill 同步更新連結。
+- `新增` 登入（簡易命名對應）：使用者輸入名字直接對應使用者ID，不做密碼／Email驗證。（Webber）
+- `新增` A-4 艾可 System Prompt 草稿（教練人設核心精神，不洩漏系統內部術語）。（Webber）
+- `新增` A-4 Echo Insights LLM 判斷邏輯：對照 Echo Card 六欄位追問，每次最多3題。（Webber）
+- `新增` A-5〈產生洞察〉按鈕觸發機制：按鈕本質是自動送出「Please Generate my insight」的保留字指令。（Webber）
+- `新增` A-5 Echo Card 各欄位 LLM 生成規則（事件的發生／我的情緒bullet格式、我在意／我討厭、我的價值主張）。（Webber）
+- `新增` C-2 Persona卡片引言句生成規則（動機價值基礎＋職稱組合句）。（Webber）
+- `變更` C-3 驅動卡片主視覺改為三圈交集Venn圖，原三卡片內容改為展開檢視。（Webber）
+- `新增` C-4 文字雲兩種候選收集法（離散情緒標記／LLM自定義關鍵字），尚未定案。（Webber）
+- `新增` C-5 行為模式排行收集法：從客觀事件萃取行為導向，取前3名。（Webber）
+- `新增` C-7／C-8／C-9 完整技術方案：逐事件記分、累加平均；C-9附完整DISC座標轉換公式。（Webber）
+- `變更` Scope 大幅縮範圍，改為只列本輪 MVP 實際範圍（登入、側邊欄、A-1／A-2／A-4／A-5、B-2、C-2／C-3／C-4／C-5／C-7／C-10），A-3、B-1（完整視覺化）／B-3／B-4／B-5／B-6、C-1／C-6／C-8／C-9 移入 Part 2。（Webber）
+- `變更` 文件：spec repo 從 gitea 遷移至 GitHub（echotrail-project-management），README／CONTRIBUTING／push-spec skill 同步更新連結。（Webber）
 
 ## 2026-08-30
 

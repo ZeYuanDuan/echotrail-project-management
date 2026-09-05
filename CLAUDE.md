@@ -9,6 +9,7 @@
 1. 用 `log-decision` skill，把這次改動的決策脈絡（改了什麼、為什麼、推翻了什麼、誰拍板）寫進 `EchoTrail-DECISIONS.md`。
    - 若這次已經直接手動編輯過 `EchoTrail-DECISIONS.md`、內容已經涵蓋這次變更，不用再跑一次 skill 重複記錄——但仍要確認條目確實存在。
 2. 用 `log-changelog` skill，在 `CHANGELOG.md` 補一句話摘要。
+   - `log-decision`／`log-changelog` 都要標改動者：`git config user.name` 對照 [README](README.md#團隊與角色) 換算成姓名，換不出來就用原始值，不要留空、不要用猜的。
 3. **不要**主動呼叫 `push-spec`／執行 `git push`——是否送出、直接推 main 還是開 PR，等使用者明確要求再做。
 
 例外：使用者明確說「先不要記」「這只是討論，還沒定案」「先別動 DECISIONS/CHANGELOG」時，不觸發上述流程。
