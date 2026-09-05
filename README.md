@@ -1,9 +1,9 @@
-# EchoTrail 共鳴旅歷 — Spec Repo
+# EchoTrail Project Management
 
-這個 repo 是 **EchoTrail 產品規格的單一真實來源（single source of truth）**。
-所有「產品要做什麼、為什麼這樣做、還有什麼沒決定」都寫在這裡，用 Git 管版本；小改動兩位 PM 可直接推 `main`，較大改動走 Pull Request 互相審閱。
+「曼陀號 PM x ENG 合作專案 EchoTrail」專案資料庫，也是 **EchoTrail 產品規格的單一真實來源（single source of truth）**。
+所有「產品要做什麼、為什麼這樣做、還有什麼沒決定」都寫在這裡，用 Git 管版本；小改動兩位 PM 可直接推 `main`，較大改動走 Pull Request 互相審閱。工程師夥伴與 mentor 也在同一個 repo 裡讀 spec、留意見，AI 能在同一份脈絡下讀取資訊，協助專案溝通與執行。
 
-- Gitea repo：<https://gitea.com/EchoTrail/echotrail-spec>（Private）
+- GitHub repo：<https://github.com/ZeYuanDuan/echotrail-project-management>
 - 主要維護者：兩位 PM（Webber、Ariel）
 - 協作規則詳見 [CONTRIBUTING.md](CONTRIBUTING.md)
 
@@ -13,24 +13,23 @@
 
 | 角色 | 成員 | 在這個 repo 做什麼 |
 |---|---|---|
-| PM | **Webber**（gitea: `TSUWEBBER`）、**Ariel（羽**：gitea `arieltsao_pm`） | 撰寫與維護 spec，兩人皆可直接推 `main`；較大改動開 PR 互相 review |
+| PM | **Webber**（GitHub: `TsuWebber`）、**Ariel（羽）** | 撰寫與維護 spec，兩人皆可直接推 `main`；較大改動開 PR 互相 review |
 | 工程師 | **Alson**、**Celine** | 讀 spec 實作；對規格有疑問時在 PR / Issue 留言或開 Issue；review 與實作相關的 PR |
 | Mentor（PM） | **Roanne** | 視需要 review PR、給規格方向建議 |
 | Mentor（ENG） | **Aaron** | 視需要 review 技術可行性、給架構建議 |
 
-> 需要存取權限找 Webber 到 repo **Settings → Collaborators** 加人；加入後請把 gitea 使用者名稱補進上表。
+> 需要存取權限找 Webber 到 repo **Settings → Collaborators** 加人；加入後請把 GitHub 使用者名稱補進上表。
 
 ---
 
 ## 開始使用
 
 ```bash
-git clone https://gitea.com/EchoTrail/echotrail-spec.git
-cd echotrail-spec
+git clone https://github.com/ZeYuanDuan/echotrail-project-management.git
+cd echotrail-project-management
 ```
 
-第一次用 Git 推送時，帳號填 gitea 使用者名稱、密碼貼 **Personal Access Token**
-（gitea 右上頭像 → Settings → Applications → Generate New Token，勾 `repo`）。
+推送時用 GitHub 帳號登入（`gh auth login`，或帳號填 GitHub 使用者名稱、密碼貼 **Personal Access Token**——GitHub 右上頭像 → Settings → Developer settings → Personal access tokens → Generate new token，勾 `repo`）。
 
 ---
 
@@ -51,7 +50,7 @@ cd echotrail-spec
 |---|---|
 | 現在的規格是什麼 | **SPEC** |
 | 這條規格當初為什麼這樣定、考慮過什麼 | **DECISIONS**〈一、決策紀錄〉對應條目 |
-| 還有什麼沒決定 | **DECISIONS**〈二、開放問題〉，或 repo [Issues](https://gitea.com/EchoTrail/echotrail-spec/issues) |
+| 還有什麼沒決定 | **DECISIONS**〈二、開放問題〉，或 repo [Issues](https://github.com/ZeYuanDuan/echotrail-project-management/issues) |
 | 最近 spec 改了哪些東西 | **CHANGELOG** |
 
 規則：**改 SPEC 定案內容時，同一次改動內一起更新 DECISIONS 對應條目、並在 CHANGELOG 補一句。**（不管是直接推 main 還是走 PR）下方的 skill 會提醒你做這件事。
@@ -88,4 +87,4 @@ cd echotrail-spec
 
 一次完整的 spec 變更 = 改 SPEC（`push-spec`）＋ `log-decision` ＋ `log-changelog`。`push-spec` 會提醒你別漏。
 
-這些 skill 會直接推 `main`（若你選這條路），但**不會**代你在 gitea 網站上開 PR / 指定 reviewer / merge（牽涉帳號，自己點）。
+這些 skill 會直接推 `main`（若你選這條路），但**不會**代你在 GitHub 網站上開 PR / 指定 reviewer / merge（牽涉帳號，自己點）。

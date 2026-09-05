@@ -1,11 +1,11 @@
 ---
 name: push-spec
-description: 把新的或改過的 EchoTrail spec 推上 gitea.com——直接推 main，或開分支＋Pull Request 給另一位 PM review，兩種都支援。當使用者說「推 spec」「上傳 spec」「spec 改好了要送出」「幫我開 PR」「push spec」或類似意圖，且工作目錄是 echotrail-spec repo 時使用。
+description: 把新的或改過的 EchoTrail spec 推上 GitHub——直接推 main，或開分支＋Pull Request 給另一位 PM review，兩種都支援。當使用者說「推 spec」「上傳 spec」「spec 改好了要送出」「幫我開 PR」「push spec」或類似意圖，且工作目錄是 echotrail-project-management repo 時使用。
 ---
 
 # push-spec
 
-把目前工作目錄裡改好的 spec 變更，依 `CONTRIBUTING.md` 的協作規則推上 gitea.com。
+把目前工作目錄裡改好的 spec 變更，依 `CONTRIBUTING.md` 的協作規則推上 GitHub。
 兩位 PM 都可以直接 push `main`；PR 是想讓對方先看過再合時才用的選項，不是強制流程。
 
 ## 前置檢查
@@ -16,7 +16,7 @@ description: 把新的或改過的 EchoTrail spec 推上 gitea.com——直接�
    git remote get-url origin
    ```
 
-   必須是 `https://gitea.com/EchoTrail/echotrail-spec.git`（或同 repo 的 ssh 形式）。不是的話停下來，告訴使用者這個 skill 只適用於 echotrail-spec repo。
+   必須是 `https://github.com/ZeYuanDuan/echotrail-project-management.git`（或同 repo 的 ssh 形式）。不是的話停下來，告訴使用者這個 skill 只適用於 echotrail-project-management repo。
 
 2. 看有哪些變更，秀給使用者確認：
 
@@ -112,7 +112,7 @@ description: 把新的或改過的 EchoTrail spec 推上 gitea.com——直接�
 10b. 產生開 PR 的連結給使用者：
 
    ```
-   https://gitea.com/EchoTrail/echotrail-spec/compare/main...spec/<主題>
+   https://github.com/ZeYuanDuan/echotrail-project-management/compare/main...spec/<主題>
    ```
 
 11b. 告訴使用者接下來手動做（牽涉帳號，Claude 不代做）：

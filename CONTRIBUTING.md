@@ -39,7 +39,7 @@ git commit -m "B-2 結果頁文案定稿；DECISIONS 對應條目補上決策理
 git push -u origin spec/b2-結果頁文案
 ```
 
-然後到 Gitea 網站上對這條分支開 **Pull Request**，指定另一位 PM 或相關 mentor 當 reviewer。approve 後 merge、刪掉分支。
+然後到 GitHub 網站上對這條分支開 **Pull Request**，指定另一位 PM 或相關 mentor 當 reviewer。approve 後 merge、刪掉分支。
 
 Claude Code 的 `push-spec` skill 會先問你要直接推 main 還是開 PR，兩種都能自動跑完，見 [README](README.md#用-claude-code-維護)。
 
@@ -50,7 +50,7 @@ Claude Code 的 `push-spec` skill 會先問你要直接推 main 還是開 PR，�
 1. **一次改動只處理一個議題**，commit 訊息或 PR 標題講清楚範圍，方便之後回溯。
 2. **不要覆蓋對方剛推上去的東西**：push 前先 `git pull`；遇到同時改同一段造成 conflict，以 DECISIONS 記錄的最新決策為準，當面對一次再合。
 3. 改 SPEC 的定案內容時，**同一次改動內**一起更新 DECISIONS 對應條目、CHANGELOG 補一句（見下方 skill）。
-4. 未拍板的事寫進 DECISIONS 的「開放問題」，或直接開一個 Gitea Issue 追蹤。
+4. 未拍板的事寫進 DECISIONS 的「開放問題」，或直接開一個 GitHub Issue 追蹤。
 5. 走 PR 時，**不要 merge 自己的 PR**（除非對方已 approve 且明確請你自己 merge）。
 
 ## commit / PR 訊息慣例
