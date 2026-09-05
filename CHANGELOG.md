@@ -12,6 +12,7 @@ EchoTrail spec 的變更摘要，**新的在上**。每筆一句話，細節看�
 
 ## 2026-09-06
 
+- `移除` DECISIONS〈二、開放問題〉24項全數歸零重來，原內容封存於 `archive/EchoTrail-DECISIONS-開放問題_260906前封存.md`，不代表已解決。（Webber）
 - `移除` Figma / Wireframe 清單精簡為三項（Prototype可互動版、Pitch Deck、競品參考tryapt.ai），拿掉Prototype v3/v4、第三小組流程圖、Figma流程圖260830補充、完整腳本提示詞四個連結。（Webber）
 
 ## 2026-09-05
