@@ -1,6 +1,6 @@
 ---
 name: log-changelog
-description: 把這次的 spec 變更整理成一句話，加進 CHANGELOG.md。當使用者說「記 changelog」「更新 changelog」「這次改動記一下」「log changelog」或在改完 spec 想留一筆變更摘要時使用。工作目錄需為 echotrail-spec repo。
+description: 把這次的 spec 變更整理成一句話，加進 CHANGELOG.md。當使用者說「記 changelog」「更新 changelog」「這次改動記一下」「log changelog」或在改完 spec 想留一筆變更摘要時使用。工作目錄需為 echotrail-project-management repo。
 ---
 
 # log-changelog
@@ -14,7 +14,7 @@ CHANGELOG.md 的條目。**不碰** SPEC 內容、**不碰** DECISIONS。
 
 ## 步驟
 
-1. 確認 repo：`git remote get-url origin` 要是 `echotrail-spec`。不是就停下。
+1. 確認 repo：`git remote get-url origin` 要是 `echotrail-project-management`。不是就停下。
    若 `CHANGELOG.md` 不存在，用現有格式建一個（標題 + 說明 + `---`）。
 
 2. 抓出「這次改了什麼」，依情境擇一：

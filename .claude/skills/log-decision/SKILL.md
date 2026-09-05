@@ -1,6 +1,6 @@
 ---
 name: log-decision
-description: 把一個剛拍板的決策寫進 EchoTrail-DECISIONS.md 的「決策紀錄」，需要時同步把對應的「開放問題」標記為已解決。當使用者說「記一個決策」「這個決定記下來」「把剛剛討論的結論寫進 DECISIONS」「第X題有結論了」「log decision」時使用。工作目錄需為 echotrail-spec repo。
+description: 把一個剛拍板的決策寫進 EchoTrail-DECISIONS.md 的「決策紀錄」，需要時同步把對應的「開放問題」標記為已解決。當使用者說「記一個決策」「這個決定記下來」「把剛剛討論的結論寫進 DECISIONS」「第X題有結論了」「log decision」時使用。工作目錄需為 echotrail-project-management repo。
 ---
 
 # log-decision
@@ -15,7 +15,7 @@ CHANGELOG 由 `log-changelog` 另外記。
 
 ## 步驟
 
-1. 確認 repo：`git remote get-url origin` 要是 `echotrail-spec`。不是就停下。
+1. 確認 repo：`git remote get-url origin` 要是 `echotrail-project-management`。不是就停下。
 
 2. 讀 `EchoTrail-DECISIONS.md`，掌握現有結構：
    - 〈一、決策紀錄〉：`### YYMMDD　標題` 的日期區塊，內含 bullet 與 **粗體小標**
