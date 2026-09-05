@@ -41,6 +41,7 @@ cd echotrail-project-management
 | [EchoTrail-DECISIONS.md](EchoTrail-DECISIONS.md) | 決策脈絡（為什麼）與**尚未拍板**的開放問題 | 主文件 |
 | [CHANGELOG.md](CHANGELOG.md) | spec 變更的一句話摘要，按日期，給人快速掃 | 主文件 |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | 協作流程與 commit / PR 慣例 | 規範 |
+| [CLAUDE.md](CLAUDE.md) | Claude Code 專案指示：改 SPEC 時自動走 log-decision／log-changelog | 工具 |
 | [archive/](archive/) | 已被併入或取代的歷史版本，僅供追溯，不再維護 | 封存 |
 | `.claude/skills/` | Claude Code skills，見下方〈用 Claude Code 維護〉 | 工具 |
 
@@ -85,6 +86,8 @@ cd echotrail-project-management
 | 「**記 decision**」「這個決定記下來」「第X題有結論了」 | [`log-decision`](.claude/skills/log-decision/SKILL.md) | 把決策（決定什麼／為什麼／推翻什麼／誰拍板）寫進 `DECISIONS.md`〈決策紀錄〉，並把對應的開放問題標記為已解決 |
 | 「**記 changelog**」「這次改動記一下」 | [`log-changelog`](.claude/skills/log-changelog/SKILL.md) | 把這次變更整理成一句話，加進 `CHANGELOG.md` 最上面 |
 
-一次完整的 spec 變更 = 改 SPEC（`push-spec`）＋ `log-decision` ＋ `log-changelog`。`push-spec` 會提醒你別漏。
+一次完整的 spec 變更 = 改 SPEC（`push-spec`）＋ `log-decision` ＋ `log-changelog`。
+
+`log-decision`／`log-changelog` 不用特地開口——[CLAUDE.md](CLAUDE.md) 已經指示 Claude Code：**只要這次任務改了 SPEC 的定案內容，結束前會主動記 DECISIONS 與 CHANGELOG**，不等你要求。`push-spec` 仍需你明確說「推 spec」才會動，不會自動推。
 
 這些 skill 會直接推 `main`（若你選這條路），但**不會**代你在 GitHub 網站上開 PR / 指定 reviewer / merge（牽涉帳號，自己點）。
