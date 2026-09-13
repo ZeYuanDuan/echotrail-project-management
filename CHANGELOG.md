@@ -10,6 +10,18 @@ EchoTrail spec 的變更摘要，**新的在上**。每筆一句話，細節看�
 
 ---
 
+## 2026-09-13
+
+- `變更` SPEC 全面精簡（A-4 以外）：降低整體細節密度，刪除 Claude 自行延伸、team 未拍板過的具體數字／舉例句子／UI細節（CSS像素值、bullet字數上限、驗證測試方法設計等），避免工程照字面誤解成硬性規格；核心規則、資料結構、team已拍板的技術方案不動。精簡前完整版封存於 `archive/EchoTrail-MVP-SPEC-完整版_260913前封存.md`。（Webber）
+- `移除` B-2、B-3「驗證用途」小節（含 B-3 自創的量化對照指標表）整段刪除，屬輔助性測試方法設計、非規格核心。（Webber）
+
+## 2026-09-12
+
+- `變更` A-4 System Prompt 由 v2 草稿升級為夥伴提供的 v1-3（PM 已收斂版）：新增角色設定、情境辨識分支（悲觀螺旋／樂觀迴避／真心樂觀分享／無法判斷）、自傷/極端負面語句的關懷提示安全政策；v2 草稿封存於 `archive/EchoTrail-A4-SystemPrompt-v2草稿_260912前封存.md`。（Webber）
+- `新增` A-4「七、Echo Card 欄位 Grounding 查核表」：定義 Echo Card 各輸出欄位需要什麼證據才能生成、證據不足時怎麼處理，防止 LLM 幻覺；與 A-5 生成規則互相 cross-reference。（Webber）
+- `變更` A-4「一、欄位定義」補上指向新「七、」的說明句，A-5「Echo Card 各欄位 LLM 生成規則」補上指向「七、」的 cross-reference。（Webber）
+- `新增` C-10 新增「背景架構：訊號萃取層與訊號帳本」：整合夥伴提供的 Dashboard 訊號帳本架構文件（第三部分），定義 Layer2 框架訊號萃取／Layer3 訊號帳本（INSERT-only、逐筆記錄 event×framework×dimension×signal_strength×evidence_quote）；附帶回答「C-7～C-9 哪些分數允許微調」——若採用此邏輯則皆會微調。聚合正規化公式與解鎖門檻數字仍待拍板，且整套架構仍附屬於既有 C-7/8/9 分數來源分歧，不代表已選定 LLM 推論這條路。（Webber）
+
 ## 2026-09-09
 
 - `變更` A-4 System Prompt 草稿改寫為 v2：從精神喊話擴充為可直接實作的完整 prompt（7 區塊＋好／壞回應對照），對齊 4 必填欄位／三段式／每輪一題／收尾時機。（Webber）
