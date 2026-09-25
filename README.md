@@ -44,8 +44,16 @@ cd echotrail-project-management
 | [CHANGELOG.md](CHANGELOG.md) | spec 變更的一句話摘要，按日期，給人快速掃 | 主文件 |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | 協作流程與 commit / PR 慣例 | 規範 |
 | [CLAUDE.md](CLAUDE.md) | Claude Code 專案指示：改 SPEC 時自動走 log-decision／log-changelog | 工具 |
+| [docs/](docs/) | AI prompt、版本變更說明、範例資料與 Demo 腳本 | 支援文件 |
 | [archive/](archive/) | 已被併入或取代的歷史版本，僅供追溯，不再維護 | 封存 |
 | `.claude/skills/` | Claude Code skills，見下方〈用 Claude Code 維護〉 | 工具 |
+
+### 資料擺放原則
+
+- 根目錄只放單一真實來源、協作規範與工具設定。
+- `docs/ai/` 放 AI 實作依據：prompt 版本、跨版變更說明與範例資料。
+- `docs/demos/` 放演示路徑、故事腳本與測試情境。
+- `archive/` 只放已被取代、不再維護的文件；現行與對照用版本不放這裡。
 
 ### 三份主文件的分工
 
